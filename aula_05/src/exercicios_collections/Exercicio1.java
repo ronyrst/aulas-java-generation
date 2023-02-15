@@ -12,16 +12,32 @@
 package exercicios_collections;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Exercicio1 {
 
 	public static void main(String[] args) {
-		ArrayList<String> notas = new ArrayList<String>();
+		ArrayList<String> cores = new ArrayList<String>();
+		Scanner leia = new Scanner(System.in);
+		String novaCor;
+		int contagem = 0;
 		
+		while(contagem < 5) {
+			System.out.println("Entre com a cor que deseja adicionar:");
+			leia.skip("\\R?");
+			novaCor = leia.nextLine();
+			
+			cores.add(novaCor);
+			contagem += 1;
+		}
 		
-		// O programa deverá solicitar ao usuário, que ele digite 
-		// via teclado 5 cores e deverá adicioná-las individualmente no ArrayList. 
-
+		System.out.println("\nCores adicionadas: ");
+		for(var cor: cores)
+			System.out.println(cor);
+		
+		cores.sort(null);
+		System.out.println("\nEm ordem crescente, cores adicionadas: ");
+		for(var cor: cores)
+			System.out.println(cor);
 	}
-
 }

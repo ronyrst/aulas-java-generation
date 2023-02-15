@@ -27,6 +27,8 @@ public class ArrayComLista {
 			case 1:
 				System.out.println("Digite uma nota entre 1 a 10");
 				nota = leia.nextDouble();
+				
+				notas.add(nota);
 				break;
 			case 2:
 				System.out.println("Listar todas as Notas");
