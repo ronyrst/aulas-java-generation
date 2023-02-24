@@ -1,34 +1,25 @@
-package exercicios_classe1;
+package exercicios_classe1.model;
 
-public class Cliente {
-	
-	private String nome;
+public class PessoaFisica extends Cliente {	
+
 	private String cpf;
 	private int mesa;
 	private String comanda;
 	private float conta;
-	
-	public Cliente(String nome, String cpf, int mesa, String comanda, float conta) {
-		this.nome = nome;
+
+	public PessoaFisica(String nome, String cpf, int mesa, String comanda, float conta) {
+		super(nome);
 		this.cpf = cpf;
 		this.mesa = mesa;
 		this.comanda = comanda;
 		this.conta = conta;
 	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getCPF() {
+	
+	public String getCpf() {
 		return cpf;
 	}
 
-	public void setCPF(String cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 
@@ -52,20 +43,17 @@ public class Cliente {
 		return conta;
 	}
 
-	public void setConta(int conta) {
+	public void setConta(float conta) {
 		this.conta = conta;
 	}
 	
+	@Override
 	public void visualizar() {
-		System.out.println("********************");
-		System.out.println("  B A R  L A G O A  ");
-		System.out.println("********************");
-		System.out.println("Nome: " + this.nome);
+		super.visualizar();
 		System.out.println("CPF: " + this.cpf);
 		System.out.println("Mesa: " + this.mesa);
 		System.out.println("Comanda: " + this.comanda);
 		System.out.println("Conta: " + this.conta);
 		System.out.println("");
-
 	}
 }
