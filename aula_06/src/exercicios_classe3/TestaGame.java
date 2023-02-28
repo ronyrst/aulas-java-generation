@@ -1,5 +1,7 @@
 package exercicios_classe3;
 
+import exercicios_classe3.model.Produto;
+
 public class TestaGame {
 
 	public static void main(String[] args) {

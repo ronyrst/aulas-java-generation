@@ -1,6 +1,6 @@
-package exercicios_classe2;
+package exercicios_classe2.model;
 
-public class Funcionario {
+public abstract class Funcionario {
 	
 	private String nome;
 	private float salario;
@@ -64,8 +64,7 @@ public class Funcionario {
 		System.out.println("Nome do colaborador: " + this.nome);
 		System.out.println("Número da Carteira de Trabalho: " + this.numeroCarteiraTrabalho);
 		System.out.println("Data de contratação: " + this.dataContratacao);
-		System.out.println("Salário: " + this.salario);
 		System.out.println("Próximas férias: " + this.dataProximasFerias);
-		System.out.println("");
+		System.out.println("Salário: " + this.salario);
 	}
 }

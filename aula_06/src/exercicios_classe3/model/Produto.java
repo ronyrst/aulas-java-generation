@@ -1,4 +1,4 @@
-package exercicios_classe3;
+package exercicios_classe3.model;
 
 public class Produto {
 	private String nomeJogo;
